@@ -1,0 +1,13 @@
+astroid==4.0.3
+attrs==22.1.0
+dill==0.4.1
+iniconfig==1.1.1
+isort==7.0.0
+mccabe==0.7.0
+packaging==21.3
+platformdirs==4.5.1
+pluggy==1.0.0
+pylint==4.0.4
+pyparsing==3.0.9
+pytest==7.2.0
+tomlkit==0.14.0
