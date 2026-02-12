@@ -309,28 +309,44 @@ max-args=4
 max-attributes=5
 
 # Maximum number of boolean expressions in an if statement (see R0916).
-max-bool-expr=5
+# MODIFIED RULE
+# max-bool-expr=5
+max-bool-expr=6
 
 # Maximum number of branch for function / method body.
-max-branches=12
+# MODIFIED RULE
+# max-branches=12
+max-branches=11
 
 # Maximum number of locals for function / method body.
-max-locals=15
+# MODIFIED RULE
+# max-locals=15
+max-locals=14
 
 # Maximum number of parents for a class (see R0901).
-max-parents=7
+# MODIFIED RULE
+# max-parents=7
+max-parents=6
 
 # Maximum number of positional arguments for function / method.
-max-positional-arguments=5
+# MODIFIED RULE
+# max-positional-arguments=5
+max-positional-arguments=4
 
 # Maximum number of public methods for a class (see R0904).
-max-public-methods=20
+# MODIFIED RULE
+# max-public-methods=20
+max-public-methods=25
 
 # Maximum number of return / yield for function / method body.
-max-returns=6
+# MODIFIED RULE
+# max-returns=6
+max-returns=5
 
 # Maximum number of statements in function / method body.
-max-statements=50
+# MODIFIED RULE
+# max-statements=50
+max-statements=45
 
 # Minimum number of public methods for a class (see R0903).
 # MODIFIED RULE
@@ -352,8 +368,10 @@ expected-line-ending-format=
 # Regexp for a line that is allowed to be longer than the limit.
 ignore-long-lines=^\s*(# )?<?https?://\S+>?$
 
+# MODIFIED RULE
 # Number of spaces of indent required inside a hanging or continued line.
-indent-after-paren=4
+# indent-after-paren=4
+indent-after-paren=5
 
 # String used as indentation unit. This is usually "    " (4 spaces) or "\t" (1
 # tab).
