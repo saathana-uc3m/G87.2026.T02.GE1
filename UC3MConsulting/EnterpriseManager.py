@@ -65,7 +65,7 @@ class EnterpriseManager:
         except FileNotFoundError as e:
             raise EnterpriseManagementException("Wrong file or file path") from e
         except json.JSONDecodeError as e:
-            raise EnterpriseManagementException("JSON Decode Error - Wrong JSON Format") from e
+            raise EnterpriseManagementException("Wrong JSON Format") from e
 
         try:
             T_CIF = DATA["cif"]
@@ -73,7 +73,7 @@ class EnterpriseManager:
             E_NAME = DATA["enterprise_name"]
             req = EnterpriseRequest(T_CIF, T_PHONE, E_NAME)
         except KeyError as e:
-            raise EnterpriseManagementException("JSON Decode Error - Invalid JSON Key") from e
+            raise EnterpriseManagementException("Invalid JSON Key") from e
 
         # Updated validation call and error message
         if not self.ValidateCIF(T_CIF):

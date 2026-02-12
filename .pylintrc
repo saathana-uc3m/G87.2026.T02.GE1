@@ -209,14 +209,18 @@ inlinevar-naming-style=any
 #inlinevar-rgx=
 
 # Naming style matching correct method names.
-method-naming-style=snake_case
+# MODIFIED RULE
+# method-naming-style=snake_case
+method-naming-style=PascalCase
 
 # Regular expression matching correct method names. Overrides method-naming-
 # style. If left empty, method names will be checked with the set naming style.
 #method-rgx=
 
 # Naming style matching correct module names.
-module-naming-style=snake_case
+# MODIFIED RULE
+# module-naming-style=snake_case
+module-naming-style=PascalCase
 
 # Regular expression matching correct module names. Overrides module-naming-
 # style. If left empty, module names will be checked with the set naming style.
@@ -295,10 +299,14 @@ exclude-too-few-public-methods=
 ignored-parents=
 
 # Maximum number of arguments for function / method.
-max-args=5
+# MODIFIED RULE
+# max-args=5
+max-args=4
 
 # Maximum number of attributes for a class (see R0902).
-max-attributes=7
+# MODIFIED RULE
+# max-attributes=7
+max-attributes=5
 
 # Maximum number of boolean expressions in an if statement (see R0916).
 max-bool-expr=5
@@ -325,7 +333,9 @@ max-returns=6
 max-statements=50
 
 # Minimum number of public methods for a class (see R0903).
-min-public-methods=2
+# MODIFIED RULE
+# min-public-methods=2
+min-public-methods=1
 
 
 [EXCEPTIONS]
@@ -352,7 +362,9 @@ indent-string='    '
 # Maximum number of characters on a single line. Pylint's default of 100 is
 # based on PEP 8's guidance that teams may choose line lengths up to 99
 # characters.
-max-line-length=100
+# MODIFIED RULE
+# max-line-length=100
+max-line-length=90
 
 # Maximum number of lines in a module.
 max-module-lines=1000
