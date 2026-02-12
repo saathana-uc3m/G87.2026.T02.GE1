@@ -1,5 +1,6 @@
 class EnterpriseManagementException(Exception):
     def __init__(self, message):
+        #testing
         self.__message = message
         super().__init__(self.message)
 
